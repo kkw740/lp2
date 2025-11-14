@@ -1,0 +1,191 @@
+/* Global CSS */
+html,body {
+    height: 100%;
+    font-family:'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar{
+    flex: 0 0 10vh;
+    background:#0d6efd;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 10%; 
+    flex-wrap: wrap;
+}
+
+.navbar h1{
+    font-size: 22px;
+}
+
+.navbar a {
+    color:white;
+    text-decoration: none;
+    margin-left:20px;
+    font-weight: 500px;
+}
+
+.navbar a.active {
+    color:gold
+}
+
+/* Hero */
+
+.hero {
+    background: url('https://clubtranscend.in/wp-content/uploads/2025/01/Corporate-Event.jpg') no-repeat center/cover;
+    color: white;
+    text-align:center;
+    padding:100px 20px;
+    flex: 1 0 40vh;
+}
+
+.hero-inner h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 1000px;
+}
+
+/* Layout */
+.container {
+    flex: 1 0 40vh;
+    width:80%;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    padding:20px;
+    border-radius:25px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.card h2,h3 {
+    color: #0d6efd;  
+}
+
+/* form,input,buttons */
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
+
+input,textarea {
+    margin-bottom:12px;
+    padding:8px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin:5px;
+}
+
+
+.btn-primary {
+    background:#0d6efd;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius:6px;
+    cursor: pointer;
+    margin:25px 150px;
+}
+
+/* event list */
+.event-list{
+    list-style:none;
+    padding:0px;
+}
+
+.event-list li {
+    background:#e0f2fe;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius:6px;
+}
+
+/* footer */
+footer {
+    flex: 0 0 10vh;
+    text-align: center;
+    padding:15px;
+    background: #0d6efd;
+    color:white;
+}
+
+
+/* Responsive Design */
+
+/* For Tablets (Medium Screens) */
+@media (max-width:768px){
+    .navbar {
+        padding: 12px 5%;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: inline;
+        margin:8px 10px;
+    }
+
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .hero-inner h2 {
+        font-size:26px
+    }
+
+    .container {
+        width:90%;
+        margin:20px auto;
+    }
+
+    .btn-primary{
+        margin:20px auto;
+        width:100%;
+    }
+}
+/* For Mobiles (Small Screens) */
+@media (max-width:480px){
+    .navbar h1 {
+        font-size:18px
+    }
+
+    .navbar {
+        padding:10px;
+    }
+
+    .hero {
+        padding:40px 8px
+    }
+
+    .hero-inner h2 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    input,textarea {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding:10px;
+    }
+}
+
+.hint {
+    color: #6b7280;       /* soft grey */
+    font-size: 13px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
