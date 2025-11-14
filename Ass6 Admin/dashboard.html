@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ass6 - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container topbar">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <p class="sub">
+            UI-only dashboard with Update/Delete options for event records.
+          </p>
+        </div>
+        <div class="row">
+          <button id="addEventBtn" class="btn-ghost">+ Add Event (UI)</button>
+          <button id="logoutBtn" class="btn-ghost">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="kpis">
+        <div class="kpi">
+          <div class="label">Total Events</div>
+          <div id="kpiTotal" class="num">0</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Upcoming</div>
+          <div id="kpiUpcoming" class="num">0</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div
+          class="row"
+          style="
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+          "
+        >
+          <h2 style="margin: 0">Events</h2>
+          <input
+            id="search"
+            class="grow cell-edit"
+            placeholder="Search events..."
+          />
+        </div>
+        <div class="table-wrap">
+          <table class="table" id="eventsTable">
+            <thead>
+              <tr>
+                <th style="width: 70px">ID</th>
+                <th>Name</th>
+                <th style="width: 140px">Date</th>
+                <th style="width: 160px">Location</th>
+                <th style="width: 200px">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows injected by JS -->
+            </tbody>
+          </table>
+        </div>
+        <div id="notice" class="notice"></div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">© 2025 Admin UI</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

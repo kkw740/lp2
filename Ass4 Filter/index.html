@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ass4 - Event List with Search</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Event List</h1>
+        <p class="desc">
+          Type a keyword to filter events. This page uses a JavaScript array and
+          filters it on the fly.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="search-bar">
+        <input
+          id="search"
+          class="search-input"
+          type="text"
+          placeholder="Search events... (e.g., tech, sports)"
+          aria-label="Search events"
+        />
+        <button id="clearBtn" class="clear-btn" type="button">Clear</button>
+      </div>
+
+      <p id="stats" class="meta"></p>
+      <div id="emptyMsg" class="empty">No events found. Try another word.</div>
+
+      <ul id="eventList" class="list" aria-live="polite"></ul>
+    </main>
+
+    <footer>
+      <div class="container">© 2025 Event Search</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

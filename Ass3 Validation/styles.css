@@ -1,0 +1,32 @@
+/* Simple styles for the Event Registration form */
+:root{
+  --brand:#2a6f97; --brand-dark:#1f5676; --bg:#f6f8fa; --text:#222; --muted:#666; --card:#fff; --border:#e5e7eb; --error:#c0392b; --ok:#0f7b2d;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+
+.header{background:var(--card);border-bottom:1px solid var(--border)}
+.container{max-width:760px;margin:0 auto;padding:16px}
+
+h1{margin:0 0 10px;font-size:1.4rem}
+.desc{color:var(--muted);margin:0 0 16px}
+
+form{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
+.form-field{margin-bottom:14px}
+label{display:block;margin:0 0 6px}
+input{width:100%;padding:10px;border:1px solid var(--border);border-radius:8px;font:inherit;background:#fff}
+input:focus{outline:2px solid #d5e8ff;border-color:#bcd7ff}
+
+small.error{color:var(--error);display:block;margin-top:6px}
+input.invalid{border-color:var(--error);background:#fff5f5}
+
+button{background:var(--brand);color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font:inherit}
+button:hover{background:var(--brand-dark)}
+
+.alert{margin-top:14px;padding:12px 14px;border-radius:8px}
+.alert.success{background:#ecfdf3;border:1px solid #d1fadf;color:var(--ok)}
+.alert.error{background:#fff1f0;border:1px solid #ffd2cf;color:var(--error)}
+
+footer{border-top:1px solid var(--border);color:var(--muted);background:var(--card)}
+footer .container{padding:12px 16px}

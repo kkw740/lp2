@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ass7 - Participant List (Static JSON)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Participant List</h1>
+        <p class="desc">
+          Select an event to see its participants. Uses static JSON data (with
+          built-in fallback for file://).
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="controls">
+        <select id="eventSelect" aria-label="Choose event"></select>
+        <input
+          id="search"
+          type="text"
+          placeholder="Search by name or email"
+          aria-label="Search participants"
+        />
+        <button id="clearBtn" class="btn" type="button">Clear</button>
+      </div>
+
+      <p id="stats" class="meta"></p>
+
+      <div class="table-wrap">
+        <table class="table" aria-live="polite">
+          <thead>
+            <tr>
+              <th style="width: 80px">Reg No</th>
+              <th>Name</th>
+              <th style="width: 240px">Email</th>
+              <th style="width: 140px">Mobile</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- rows injected by JS -->
+          </tbody>
+        </table>
+      </div>
+
+      <div id="emptyMsg" class="empty">
+        No participants found for this search.
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">© 2025 Participant List</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
